@@ -37,10 +37,40 @@ npm install
 
 ⚙️ Environment Setup
 Create a .env file in the root directory and add:
-
-env
-Copy
-Edit
 MONGO_URL=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
+
+
+
+▶️ Run the Server
+npm start
+
+
+
+📌 API Endpoints
+🔐 Auth Routes
+Method	Endpoint	Description
+POST	/api/auth/register	Register new user
+POST	/api/auth/login	User login
+👤 User Routes
+Method	Endpoint	Description
+GET	/api/users/:id	Get user info by ID
+PUT	/api/users/:id	Update user info
+DELETE	/api/users/:id	Delete a user
+PUT	/api/users/:id/follow	Follow a user
+PUT	/api/users/:id/unfollow	Unfollow a user
+📝 Note Routes
+Method	Endpoint	Description
+POST	/api/notes	Create a new note
+GET	/api/notes/:id	Get a specific note
+PUT	/api/notes/:id	Update a note
+DELETE	/api/notes/:id	Delete a note
+GET	/api/notes/timeline/all	Get timeline (posts + follows)
+
+
+
+
+🤝 Contributing
+Contributions are welcome! Open a pull request or create an issue to start the discussion.
+
